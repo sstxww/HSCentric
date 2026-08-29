@@ -1,5 +1,33 @@
 # HSCentric
 
+<p align="center">
+  <img src="docs/assets/readme-banner.svg" alt="Repository overview banner" width="100%" />
+</p>
+
+<p align="center">
+  <img alt="Platform" src="https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square&logo=windows" />
+  <img alt="Target" src="https://img.shields.io/badge/Target-Hearthstone-F59C1A?style=flat-square" />
+  <img alt="Modes" src="https://img.shields.io/badge/Modes-Traditional_·_Mercenary-EA580C?style=flat-square" />
+  <img alt="Integration" src="https://img.shields.io/badge/Integration-HsMod_+_HearthBuddy-7C3AED?style=flat-square" />
+</p>
+
+<p align="center"><a href="#说明">前置组件</a> · <a href="#切换原理">切换原理</a> · <a href="#已知问题">已知问题</a></p>
+
+## 一眼看懂
+
+| 维度 | 说明 |
+| --- | --- |
+| 定位 | 在传统模式与佣兵模式之间切换配置并拉起对应炉石运行组件 |
+| 依赖 | HsMod、Mercenary，以及传统对战使用的 HearthBuddy |
+| 可复用运行目录 | `default_runtime/BepinEXPlugin` 与 `default_runtime\HSCentric` |
+| 当前支持 | 传统 → 佣兵、佣兵 → 佣兵、佣兵 → 传统 |
+| 当前限制 | 暂不支持传统对战模式之间的相邻切换；日志无法定时清理 |
+
+> 首次配置完成后，按原说明让中控自动拉起一次游戏再关闭，以完成运行配置。
+
+---
+
+
 ### 说明
 
 1. 需要配合[HsMod(author:Pik-4)](https://github.com/Pik-4/HsMod)使用，HsMod配置如下（用中控拽起会自动设置）
